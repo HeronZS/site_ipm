@@ -3,6 +3,11 @@
     font-family: "Afacad Flux", sans-serif;
 }
 
+body, html{
+    height: 100%;
+    overflow: hidden;
+}
+
 
 .navegar{
     background: rgb(161, 18, 22);
@@ -50,19 +55,15 @@
     display: flex;
 }
 
-.icone{
-    display: flex;
-    justify-content: center;
-    margin-top: 6%;
-}
 
 .section{
     background-image: url('../img/subtle-prism.svg');
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 .footer{
     position: fixed;
@@ -72,6 +73,7 @@
     height: 8%;
     align-content: center;
     text-align: center;
+    border-top: 2px solid white;
 }
 
 .navegar_baixo a{
@@ -111,6 +113,10 @@
     top: 12rem;
     width: 30%;
     text-align: justify;
+    background: white;
+    padding: 3rem;
+    border: 5px solid #a11216;
+    border-radius: 10px;
 }
 
 .carreira h1{
@@ -131,6 +137,11 @@
     cursor: pointer;
     font-size: 26px;
     color: black;
+    border: 2px solid #a11216;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
 .botao::after{
@@ -147,7 +158,7 @@
 }
 
 .botao:hover::after{
-    transform: scaleX(1);
+    transform: scaleX(0.8);
     transform-origin: center;
 }
 
@@ -155,7 +166,7 @@
 .img_contato img{
     position: absolute;
     width: 50%;
-    left: 40rem;
+    left: 50rem;
     bottom: 2rem;
 }
 

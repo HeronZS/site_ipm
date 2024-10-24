@@ -69,21 +69,6 @@
     justify-content: center;    
 }
 
-.field p{
-    font-size: 20px;
-}
-
-.field img{
-    width: 30%;
-}
-
-.icone{
-    display: flex;
-    justify-content: center;
-    margin-top: 6%;
-}
-
-
 .legenda{
     text-align: center;
     background: rgb(161, 18, 22);
@@ -179,9 +164,9 @@
 }
 
 .carreira_img{
-    position: absolute;
-    left: 50rem;
-    bottom: 4rem;
+    position: relative;
+    left: 60rem;
+    bottom: 3rem;
 }
 
 @media only screen and (max-width: 1200px) {
