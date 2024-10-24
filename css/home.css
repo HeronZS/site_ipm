@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+
+.navegar{
+    background: rgb(161, 18, 22);
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    height: 6rem;
+}
+
+
+.navegar a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    align-content: center;
+    display: inline-block;
+    position: relative;
+    margin-left: 2%;
+}
+
+.navegar a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0.9rem;
+    left: 0;
+    background-color: white;
+    transform-origin: center;
+    transition: transform 0.25s ease-in-out;
+}
+
+.navegar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
+    box-shadow: 0 0 10px white;
+}
+
+.menu{
+    display: flex;
+}
+
+.campos{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    gap: 10px;
+}
+
+.field{
+    height: 22rem;
+    text-align: justify;
+    background: rgb(231, 192, 192);
+    border: 2px solid rgb(161, 18, 22);
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    justify-content: center;    
+}
+
+.field p{
+    font-size: 20px;
+}
+
+.field img{
+    width: 30%;
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+
+.legenda{
+    text-align: center;
+    background: rgb(161, 18, 22);
+    border: 2px solid black;
+    color: white;
+    width: 50%;
+    height: 10%;
+    align-content: center;
+    font-size: 20px;
+}
+
+.footer{
+    position: fixed;
+    background: rgb(161, 18, 22);
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    align-content: center;
+    text-align: center;
+}
+
+.navegar_baixo a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    align-content: center;
+    display: inline-block;
+    position: relative;
+    margin-left: 2%;
+}
+
+.navegar_baixo a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0.5rem;
+    left: 0;
+    background-color: white;
+    transform-origin: center;
+    transition: transform 0.25s ease-in-out;
+}
+
+.navegar_baixo a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
+    box-shadow: 0 0 10px white;
+}
+
+.carreira{
+    position: absolute;
+    left: 10rem;
+    top: 12rem;
+    width: 30%;
+    text-align: justify;
+}
+
+.carreira h1{
+    font-size: 40px;
+}
+
+.carreira p{
+    font-size: 20px;
+}
+
+.carreira strong{
+    color: rgb(161, 18, 22);
+}
+
+.botao{
+    padding: 1em 2em;
+    position: relative;
+    top: 25rem;
+    left: 12rem;
+    background: cornflowerblue;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    color: white;
+    position: relative;
+}
+
+
+.botao:hover{
+    background-color: rgb(63, 100, 169);;
+}
+
+.carreira_img{
+    position: absolute;
+    left: 50rem;
+    bottom: 4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .carreira {
+        left: 8rem;
+        width: 40%;
+    }
+
+    .carreira_img {
+        left: 40rem;
+    }
+
+    .botao {
+        left: 10rem;
+        top: 22rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .campos {
+        flex-direction: column;
+    }
+
+    .carreira {
+        left: 5rem;
+        width: 50%;
+    }
+
+    .carreira_img {
+        left: 30rem;
+        bottom: 2rem;
+    }
+
+    .botao {
+        left: 8rem;
+        top: 20rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navegar a {
+        font-size: 20px;
+    }
+
+    .carreira {
+        left: 3rem;
+        width: 70%;
+    }
+
+    .carreira_img {
+        display: none;
+    }
+
+    .botao {
+        left: 5rem;
+        top: 18rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navegar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navegar a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .campos {
+        gap: 5px;
+    }
+
+    .field {
+        height: auto;
+        padding: 10px;
+    }
+
+    .carreira {
+        left: 2rem;
+        width: 80%;
+    }
+
+    .botao {
+        left: 3rem;
+        top: 15rem;
+    }
+}
