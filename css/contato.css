@@ -127,12 +127,10 @@ body, html{
     font-size: 20px;
 }
 
-
 .botao{
     padding: 1em 2em;
-    position: relative;
-    top: 0.2rem;
-    right: 30rem ;
+    position: absolute;
+    left: 20%;
     border: none;
     cursor: pointer;
     font-size: 26px;

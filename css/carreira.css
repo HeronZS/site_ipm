@@ -164,8 +164,8 @@
 }
 
 .carreira_img{
-    position: relative;
-    left: 60rem;
+    position: absolute;
+    left: 50%;
     bottom: 3rem;
 }
 
